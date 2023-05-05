@@ -141,6 +141,8 @@ type LNURLPayParams struct {
 	EncodedMetadata string         `json:"metadata"`
 	CommentAllowed  int64          `json:"commentAllowed"`
 	PayerData       *PayerDataSpec `json:"payerData,omitempty"`
+	AllowsNostr     bool           `json:"allowsNostr"`
+	NostrPubkey     string         `json:"nostrPubkey,omitempty"`
 
 	Metadata Metadata `json:"-"`
 }
